@@ -1,2 +1,8 @@
-<!--pages/shopping/shopping.wxml-->
-<text>扫码购物</text>
+<view class="swiper_box">
+  <view class="swiprt">
+    <Appswiper swipeList="{{swipeList}}"></Appswiper>
+  </view>
+  <view class="main">
+    <Appcode bindhandleCode='handleCode'> </Appcode>
+  </view>
+</view>

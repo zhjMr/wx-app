@@ -1,0 +1,22 @@
+.code_box{
+  width: 290rpx;
+  height: 290rpx;
+  background-color: #ffd301;
+  border-radius: 50%;
+  border:20rpx solid #FFE49B;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.code_box image{
+  width: 176rpx;
+  height: 131rpx;
+}
+.code_box text{
+   display: block;
+   color: #fff;
+   width: 164rpx;
+   text-align: center;
+}

@@ -1,1 +1,21 @@
-/* pages/shopping/shopping.wxss */
+.swiper_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+.swiper_box .swiprt {
+  height: 340rpx;
+  background-color: aqua;
+}
+.swiper_box swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper_box .main {
+  flex : 1;
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+}

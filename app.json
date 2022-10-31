@@ -11,7 +11,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor": "#f5ba47",
+    "selectedColor": "#f4914c",
     "list": [{
         "pagePath": "pages/shopping/shopping",
         "text": "扫码购物",

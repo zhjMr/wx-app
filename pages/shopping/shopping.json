@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+      "Appswiper":"/components/Appswiper/Appswiper",
+      "Appcode":"/components/Appcode/Appcode"
+  }
 }
