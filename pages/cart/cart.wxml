@@ -1,0 +1,41 @@
+<view class="box" wx:if="{{cartList.length > 0}}">
+  <view class="handList">
+    <view class="item" wx:for="{{cartList}}" wx:key="index">
+      <view class="list">
+        {{item.title}}
+      </view>
+      <view class="size">
+        规格:500ml/瓶
+      </view>
+      <view class="price">
+        ￥{{item.price}}
+      </view>
+      <view class="computed">
+        <view class="addCart button" data-index='{{index}}' bindtap="addCard">-</view>
+        <input type="number" value="{{item.num}}"   bind:change='bule' />
+        <view class="minCart button" data-index="{{index}}" bindtap="minCard">+</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="foort">
+    <view class="total">
+      总计: <text>{{spriceNum}}</text>
+    </view>
+    <view class="group">
+      <view class="add"  bindtap="GoAdd">继续添加</view>
+      <view class="settlement">
+        去结算 <text>({{cartList.length}})</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="empty-cart" wx:else>
+  <view class="tips">购物车是空的哦</view>
+  <view class="icon">
+    <image src="/assets/images/cart.png"></image>
+  </view>
+  <view class="button"  bindtap="GoAdd">扫一扫条形码</view>
+</view>

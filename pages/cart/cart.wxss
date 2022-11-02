@@ -1,0 +1,146 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box .handList {
+  flex: 1;
+  padding-bottom: 170rpx;
+}
+
+.box .handList .item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+}
+
+.box .handList .item .list {
+  color: #333;
+}
+
+.box .handList .item .size {
+  color: #777;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+}
+
+.box .handList .item .price {
+  color: #FEBE1B;
+  padding-bottom: 20rpx;
+}
+
+.box .handList .item .computed {
+  display: flex;
+  position: absolute;
+  right: 10rpx;
+  top: 130rpx;
+}
+
+.box .computed .button {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.box .computed .addCart {
+  border: 1rpx solid #FEBE1B;
+  background-color: #fff;
+  color: #FEBE1B;
+}
+
+.box .computed .minCart {
+  background-color: #FEBE1B;
+  color: #fff;
+}
+
+.box .computed input {
+  width: 160rpx;
+  height: 60rpx;
+  border: 1px solid #FEBE1B;
+  border-radius: 50rpx;
+  box-sizing: border-box;
+  margin: 0 10rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.box .foort {
+  display: flex;
+  flex-direction: column;
+  height: 170rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 2px #ccc;
+  z-index: 9999;
+}
+
+.box .total {
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #666;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+
+.box .total text {
+  margin-left: 10rpx;
+  color: #f60;
+}
+
+.box .group {
+  display: flex;
+  flex: 1;
+}
+
+.box .group view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .group view.add {
+  background-color: #FEBE1B;
+  color: #fff;
+}
+
+.box .group view.settlement {
+  background-color: #f60;
+  color: #fff;
+}
+
+.box view.settlement text {
+  margin-left: 10rpx;
+}
+.empty-cart{
+  height : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-cart .tips{
+  margin-top: 250rpx;
+  color : #777;
+}
+.empty-cart .icon{
+  width: 250rpx;
+  height : 250rpx;
+  margin: 50rpx 0;
+}
+.empty-cart .button{
+  background-color: #FEBE1B;
+  width: 320rpx;
+  height : 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size : 30rpx;
+  border-radius: 15rpx;
+}

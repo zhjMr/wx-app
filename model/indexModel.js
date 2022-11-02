@@ -1,21 +1,10 @@
 import Http from "../utils/request"
 
-const getBanner = () => {
-  return Http.request({
-    url: '/app/banner',
-    method: 'GET'
-  })
+class ShoppingModel {
+  // 扫码获取商品信息接口
+  static getProductInfo(data){
+    return Http.request({url : '/api/getProduct', method : 'GET', data})
+  }
 }
 
-const getNav = () => {
-  return Http.request({
-    url: '/app/nav',
-    method: 'GET'
-  })
-}
-
-
-export default {
-  getBanner,
-  getNav
-}
+export default ShoppingModel
